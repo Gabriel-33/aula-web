@@ -3,15 +3,24 @@
 body{
     margin:0;
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    
+    background-image: url("../assets/img/background.jpg");
+    background-repeat: no-repeat;
+    backdrop-filter: blur(40px);
+    color: white;
 }
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu{
     display: flex;
     justify-content: center;
 }
 .menu{
-    background-color: #df752e;
+    background-color: #032c47;
     justify-content: space-between;
     color:white;
     font-size: 18px;
@@ -55,7 +64,7 @@ body{
 }
 
 .film figure img{
-    height: 90vh;
+    height: 80vh;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 5px;
@@ -66,8 +75,8 @@ body{
     z-index: 1;
 }
 
-.blur{
-
+.film figure table{
+    width: 100%;
 }
 
 .film figure{
@@ -77,22 +86,7 @@ body{
     margin: 0;
 }
 
-.film-1{
-    background-color: #b6731c;
-}
 
-
-.film-2{
-    background-color: #310f5e;
-}
-
-.film-3{
-    background-color: #310f5e;
-}
-
-.film-4{
-    background-color: #310f5e;
-}
 
 .film figure img:hover{
     box-shadow: 0 0 2px 1px rgba(0, 13, 17, 0.5);
@@ -116,7 +110,7 @@ body{
 
 footer{
     background-color: black;
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
