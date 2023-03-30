@@ -3,14 +3,15 @@
 body{
     margin:0;
     font-family: 'Roboto', sans-serif;
-    background-color: #FA6600;
+    background-color: #ffffff;
+    
 }
 .menu{
     display: flex;
     justify-content: center;
 }
 .menu{
-    background-color: #612701;
+    background-color: #df752e;
     justify-content: space-between;
     color:white;
     font-size: 18px;
@@ -32,37 +33,87 @@ body{
     color:white;
 }
 .menu ul li a:hover{
-    color:red;
+    color:rgb(255, 234, 210);
     font-size: 19px;
 }
-.conteudo{
-    padding: 30px;
-}
-.conteudo aside{
-    background-color: white;
-    width: 100%;
-    border-radius: 2px;
-}
-.conteudo aside .film{
+
+.inicio {
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.conteudo aside{
     width: 100%;
 }
-.conteudo aside .film [class^="film-"]{
+
+.film{
+    display: flex;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.film figure img{
+    height: 90vh;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.blur{
+
+}
+
+.film figure{
+    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 33%;
-    height: auto;
-    
+    margin: 0;
 }
-.conteudo aside .film [class^="film-"] figure{
+
+.film-1{
+    background-color: #b6731c;
+}
+
+
+.film-2{
+    background-color: #310f5e;
+}
+
+.film-3{
+    background-color: #310f5e;
+}
+
+.film-4{
+    background-color: #310f5e;
+}
+
+.film figure img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 13, 17, 0.5);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+
+.filmdescription{
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: 245px;
-    background-color: green;
+    justify-content: space-evenly;
+    height: 95%;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    z-index: 1;
 }
+
 footer{
     background-color: black;
     height: 100px;
