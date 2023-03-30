@@ -86,7 +86,7 @@ body{
     flex-direction: row;
     margin: 0;
 }
-
+/*
 .film-1{
     background-color: #b6731c;
 }
@@ -102,7 +102,7 @@ body{
 .film-4{
     background-color: #310f5e;
 }
-
+*/
 [class*="film-"]{
     padding: 30px;
 }
