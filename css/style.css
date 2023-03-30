@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    background-color: orange;
+    justify-content: space-between;
+    color:white;
+    font-size: 18px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+}
+.menu ul li a{
+    display: inline;
+    text-decoration: none;
+    margin-top: 100px;
+    color:white;
+}
+.menu ul li a:hover{
+    color:red;
+    font-size: 19px;
+}
+.conteudo aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.conteudo aside div figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
