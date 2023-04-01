@@ -3,18 +3,19 @@
 body{
     margin:0;
     font-family: 'Roboto', sans-serif;
-    background-image: url("../assets/img/wallpaper.jpg");
-    background-repeat: repeat;
-    backdrop-filter: blur(30px);
     color: white;
 }
 
+.inicio,.film{
+    background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(249,5,243,0.9752275910364145) 51%, rgba(0,212,255,1) 100%);
+    background-repeat: repeat;
+}
 .inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    filter: blur(0.2px);
 }
-
 .inicio header {
     background-color: rgba(0, 0, 0, 0.445);
     border-radius: 10px;
