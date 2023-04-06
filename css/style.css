@@ -11,19 +11,25 @@ body{
     background-repeat: repeat;
 }
 .inicio{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    filter: blur(0.2px);
 }
-.inicio header {
+.img-inicio{
+    filter: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inicio .logo-site {
     background-color: rgba(0, 0, 0, 0.445);
     border-radius: 10px;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.582);
     color: rgb(255, 196, 0);
 }
 
-.inicio header button{
+.inicio .logo-site button{
     color: white;
     background-color: red;
     border-radius: 8px;
@@ -38,17 +44,17 @@ body{
     margin-top: 5%;
 }
 
-.inicio header button img{
+.inicio .logo-site button img{
     width: 35px;
     margin-top: auto;
     margin-bottom: auto;
 }
-.inicio header button b{
+.inicio .logo-site button b{
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.inicio header button:hover{
+.inicio .logo-site button:hover{
     background-color: rgb(255, 196, 0);
     transition-duration: 300ms;
 }
