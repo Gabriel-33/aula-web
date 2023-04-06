@@ -4,25 +4,29 @@ body{
     margin:0;
     font-family: 'Roboto', sans-serif;
     background-image: url("../assets/img/wallpaper.jpg");
+    height: 200px;
     background-repeat: repeat;
-    backdrop-filter: blur(30px);
-    color: white;
+    /* backdrop-filter: blur(30px); */
 }
 
 .inicio{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-
-.inicio header {
+.inicio .conteudo-inicio{
     background-color: rgba(0, 0, 0, 0.445);
     border-radius: 10px;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.582);
     color: rgb(255, 196, 0);
 }
-
-.inicio header button{
+.inicio .conteudo-inicio figure{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.inicio .conteudo-inicio button{
     color: white;
     background-color: red;
     border-radius: 8px;
@@ -37,23 +41,29 @@ body{
     margin-top: 5%;
 }
 
-.inicio header button img{
+.inicio .conteudo-inicio button img{
     width: 35px;
     margin-top: auto;
     margin-bottom: auto;
 }
-.inicio header button b{
+.inicio .conteudo-inicio button b{
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.inicio header button:hover{
+.inicio .conteudo-inicio button:hover{
     background-color: rgb(255, 196, 0);
     transition-duration: 300ms;
 }
 
 .menu{
     display: flex;
+    justify-content: center;
+}
+.menu header{
+    display: flex;
+    flex-direction: column;
+    height: auto;
     justify-content: center;
 }
 .menu{
@@ -97,7 +107,7 @@ body{
     align-items: center;
 }
 
-.conteudo aside{
+.conteudo{
     width: 100%;
 }
 
@@ -145,12 +155,12 @@ body{
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
-    padding-left: 10vw;
+    padding-left: 10vw; 
     padding-right: 10vw;
     z-index: 1;
     text-shadow: 5px;
 }
-.conteudo aside h2{
+.conteudo h2{
     font-family: 'Courier New', Courier, monospace;
 
 }
@@ -163,4 +173,45 @@ footer{
 }
 footer h3{
     color: white;
+}
+@media screen and (max-width:920px){
+    .inicio{
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 180px;
+    }
+    .conteudo img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .conteudo .filmdescription{
+        justify-content: center;
+        height: auto;
+    }
+    .conteudo .film{
+        padding: 40px;
+        height: 600px;
+    }
+}
+@media screen and (max-width:600px){
+    .conteudo{
+        width: 100%;
+    }
+    .conteudo .filmdescription{
+        font-size: 10px;
+    }
+    .conteudo img{
+        max-width: auto;
+        width: 150px;
+        height: 150px!important;
+    }
+    .conteudo .filmdescription{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .conteudo .film{
+        padding: 10px;
+        height: auto;
+    }
 }
