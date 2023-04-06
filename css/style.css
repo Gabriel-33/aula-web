@@ -3,46 +3,23 @@
 body{
     margin:0;
     font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
-    color: white;
-=======
     background-image: url("../assets/img/wallpaper.jpg");
     height: 200px;
     background-repeat: repeat;
     /* backdrop-filter: blur(30px); */
->>>>>>> development
 }
 
-.inicio,.film{
-    background-image:linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgb(255, 2, 251) 51%, rgb(1, 75, 89) 100%);
-    background-repeat: repeat;
-}
 .inicio{
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-<<<<<<< HEAD
-.img-inicio{
-    filter: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.inicio .logo-site {
-=======
 .inicio .conteudo-inicio{
->>>>>>> development
     background-color: rgba(0, 0, 0, 0.445);
     border-radius: 10px;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.582);
     color: rgb(255, 196, 0);
 }
-<<<<<<< HEAD
-
-.inicio .logo-site button{
-=======
 .inicio .conteudo-inicio figure{
     display: flex; 
     flex-direction: column; 
@@ -50,7 +27,6 @@ body{
     align-items: center;
 }
 .inicio .conteudo-inicio button{
->>>>>>> development
     color: white;
     background-color: red;
     border-radius: 8px;
@@ -65,29 +41,17 @@ body{
     margin-top: 5%;
 }
 
-<<<<<<< HEAD
-.inicio .logo-site button img{
-=======
 .inicio .conteudo-inicio button img{
->>>>>>> development
     width: 35px;
     margin-top: auto;
     margin-bottom: auto;
 }
-<<<<<<< HEAD
-.inicio .logo-site button b{
-=======
 .inicio .conteudo-inicio button b{
->>>>>>> development
     margin-top: auto;
     margin-bottom: auto;
 }
 
-<<<<<<< HEAD
-.inicio .logo-site button:hover{
-=======
 .inicio .conteudo-inicio button:hover{
->>>>>>> development
     background-color: rgb(255, 196, 0);
     transition-duration: 300ms;
 }
